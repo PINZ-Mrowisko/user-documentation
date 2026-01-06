@@ -3683,3 +3683,55 @@ ul li ul {
     padding-top: 10px;
     border-top: 1px solid #ddd;
 }
+
+/* -------------------- Content formatting -------------------- */
+#main-content {
+    text-align: center;
+}
+
+#main-content ol {
+    text-align: left;
+    display: inline-block;
+    margin: 20px auto;
+    padding-left: 20px;
+}
+
+#main-content li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+#main-content img {
+    margin: 20px auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.pageSection {
+    margin-top: 30px;
+}
+
+/* -------------------- Apply index blue colors -------------------- */
+#page h1, #page h2, #page h3 {
+    color: #1e3a8a !important;
+}
+
+#page a {
+    color: #2563eb !important;
+}
+
+#page a:hover {
+    text-decoration: underline !important;
+}
+
+#page #breadcrumbs a {
+    color: #2563eb !important;
+}
+
+#page th {
+    background-color: #1e3a8a !important;
+    color: #fff !important;
+}
