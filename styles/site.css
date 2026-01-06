@@ -3532,3 +3532,154 @@ body.content-type-blogpost #main-header {
 .recently-updated.macro-blank-experience.edit {
     padding: var(--ds-space-100);
 }
+
+/* -------------------- Improved styles from index -------------------- */
+/* -------------------- Ogólne -------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #1e3a8a; /* głęboki niebieski */
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 5px;
+}
+
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* -------------------- Tabela -------------------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: #fff;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+/* -------------------- Lista stron -------------------- */
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin: 8px 0;
+}
+
+ul li ul {
+    margin-left: 20px;
+    border-left: 2px solid #ddd;
+    padding-left: 10px;
+}
+
+/* -------------------- Sekcje -------------------- */
+.pageSection {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* -------------------- Stopka -------------------- */
+#footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+}
+
+#footer a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+/* -------------------- Subpage specific styles -------------------- */
+#main-header {
+    margin-bottom: 20px;
+}
+
+#breadcrumb-section {
+    margin-bottom: 10px;
+}
+
+#breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#breadcrumbs li {
+    display: inline;
+}
+
+#breadcrumbs li:not(.first):before {
+    content: " > ";
+    color: #666;
+}
+
+#breadcrumbs a {
+    color: #2563eb;
+}
+
+#title-heading {
+    margin-top: 10px;
+}
+
+#content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.page-metadata {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
