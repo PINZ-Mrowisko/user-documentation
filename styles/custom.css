@@ -121,12 +121,8 @@ ul li ul, ol li ol {
     position: relative;
 }
 
-#main-content li::before {
-    content: "•";
-    color: #1e3a8a;
-    font-weight: bold;
-    position: absolute;
-    left: -15px;
+#main-content ol li::before {
+    content: none;
 }
 
 /* -------------------- Images/Screenshots -------------------- */
