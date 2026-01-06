@@ -88,6 +88,14 @@ ul li, ol li {
     line-height: 1.6;
 }
 
+ul li {
+    list-style: disc;
+}
+
+ol li {
+    list-style: decimal;
+}
+
 ul li ul, ol li ol {
     margin-left: 20px;
     margin-top: 8px;
@@ -117,12 +125,6 @@ ul li ul, ol li ol {
 
 #main-content li {
     margin-bottom: 15px;
-    padding-left: 10px;
-    position: relative;
-}
-
-#main-content ol li::before {
-    content: none;
 }
 
 /* -------------------- Images/Screenshots -------------------- */
