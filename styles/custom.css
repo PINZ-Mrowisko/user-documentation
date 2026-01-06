@@ -1,0 +1,301 @@
+/* Custom CSS for user documentation - Clean and proper */
+
+/* -------------------- Base Styles -------------------- */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* -------------------- Headings -------------------- */
+h1, h2, h3, h4, h5, h6 {
+    color: #1e3a8a;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    border-bottom: 2px solid #1e3a8a;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+/* -------------------- Links -------------------- */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+a:hover {
+    color: #1d4ed8;
+    text-decoration: underline;
+}
+
+/* -------------------- Tables -------------------- */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #1e3a8a;
+    color: #fff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f4f6;
+}
+
+tr:hover {
+    background-color: #e5e7eb;
+}
+
+/* -------------------- Lists -------------------- */
+ul, ol {
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+ul li ul, ol li ol {
+    margin-left: 20px;
+    margin-top: 8px;
+}
+
+/* -------------------- Content Areas -------------------- */
+.pageSection {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+/* -------------------- Main Content -------------------- */
+#main-content {
+    text-align: center;
+}
+
+#main-content ol {
+    text-align: left;
+    display: inline-block;
+    margin: 20px auto;
+    padding-left: 20px;
+    max-width: 800px;
+}
+
+#main-content li {
+    margin-bottom: 15px;
+    padding-left: 10px;
+    position: relative;
+}
+
+#main-content li::before {
+    content: "•";
+    color: #1e3a8a;
+    font-weight: bold;
+    position: absolute;
+    left: -15px;
+}
+
+/* -------------------- Images/Screenshots -------------------- */
+#main-content img {
+    margin: 20px auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #e5e7eb;
+}
+
+/* -------------------- Breadcrumbs -------------------- */
+#breadcrumb-section {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+}
+
+#breadcrumbs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#breadcrumbs li {
+    margin-right: 5px;
+}
+
+#breadcrumbs li:not(.first)::before {
+    content: ">";
+    margin-right: 5px;
+    color: #666;
+}
+
+#breadcrumbs a {
+    color: #2563eb;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+#breadcrumbs a:hover {
+    background-color: #eff6ff;
+}
+
+/* -------------------- Title -------------------- */
+#title-heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#title-text {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1e3a8a;
+}
+
+/* -------------------- Content Container -------------------- */
+#content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+/* -------------------- Metadata -------------------- */
+.page-metadata {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+    text-align: center;
+}
+
+/* -------------------- Footer -------------------- */
+#footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #555;
+    padding: 20px 0;
+    border-top: 1px solid #ddd;
+    margin-top: 30px;
+}
+
+#footer a {
+    color: #2563eb;
+}
+
+/* -------------------- Responsive Design -------------------- */
+@media (max-width: 768px) {
+    #page {
+        padding: 10px;
+    }
+
+    #content {
+        padding: 20px;
+    }
+
+    #title-text {
+        font-size: 1.5rem;
+    }
+
+    table {
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 8px 10px;
+    }
+
+    #main-content ol {
+        padding-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.3rem;
+    }
+
+    #content {
+        padding: 15px;
+    }
+
+    #main-content img {
+        margin: 15px auto;
+    }
+}
+
+/* -------------------- AUI Overrides for Blue Theme -------------------- */
+.aui-page-panel h1,
+.aui-page-panel h2,
+.aui-page-panel h3,
+.aui-page-panel h4,
+.aui-page-panel h5,
+.aui-page-panel h6,
+#title-heading,
+.pagetitle {
+    color: #1e3a8a !important;
+}
+
+.aui-page-panel a,
+.aui-page-panel a:link,
+.aui-page-panel a:visited {
+    color: #2563eb !important;
+}
+
+.aui-page-panel a:hover {
+    color: #1d4ed8 !important;
+}
+
+/* -------------------- Utility Classes -------------------- */
+.text-center {
+    text-align: center;
+}
+
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }

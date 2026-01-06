@@ -26,41 +26,47 @@ img, fieldset {
 
 /* https://github.com/necolas/normalize.css */
 /* Customised to remove styles for unsupported browsers */
-// HTML5 display definitions
-// ==========================================================================
-// Correct `block` display not defined for `details` or `summary` in IE 9/10/11 and Firefox.
-// Correct `block` display not defined for `main` in IE 9/10/11.
+/* HTML5 display definitions
+==========================================================================
+Correct `block` display not defined for `details` or `summary` in IE 9/10/11 and Firefox.
+Correct `block` display not defined for `main` in IE 9/10/11. */
 details,
 main,
 summary {
     display: block;
 }
 
-// 1. Correct `inline-block` display not defined in IE 9.
-// 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+/*
+1. Correct `inline-block` display not defined in IE 9.
+2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+*/
 audio,
 canvas,
 progress,
 video {
-    display: inline-block; // 1
-    vertical-align: baseline; // 2
+    display: inline-block;
+    vertical-align: baseline;
 }
 
-// Prevent modern browsers from displaying `audio` without controls.
-// Remove excess height in iOS 5 devices.
+/*
+Prevent modern browsers from displaying `audio` without controls.
+Remove excess height in iOS 5 devices.
+*/
 audio:not([controls]) {
     display: none;
     height: 0;
 }
 
-// Address `[hidden]` styling not present in IE 8/9/10.
-// Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+/*
+Address `[hidden]` styling not present in IE 8/9/10.
+Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+*/
 [hidden],
 template {
     display: none;
 }
 
-// Prevent iOS defaulting to push-button which ignores many styles unless a bg image is set
+/* Prevent iOS defaulting to push-button which ignores many styles unless a bg image is set */
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
@@ -695,7 +701,7 @@ body {
     padding-top: (@aui-grid * 2);
 }
 
-// responsive layout mixins
+/* responsive layout mixins */
 .aui-responsive-layout-full-width() {
     .aui-page-header,
     .aui-page-panel {
@@ -783,15 +789,15 @@ body {
     }
 });
 
-// General responsive layout breakpoints
+/* General responsive layout breakpoints */
 html.aui-responsive {
 
-    // so that text in the footer wraps correctly
+    /* so that text in the footer wraps correctly */
     #footer .footer-body > ul > li {
         white-space: normal;
     }
 
-    // Focused page responsive layout breakpoints
+    /* Focused page responsive layout breakpoints */
     @media screen and (max-width: 400px) {
         .aui-page-focused-small {
             .aui-responsive-layout-full-width();
@@ -826,8 +832,8 @@ html.aui-responsive {
 @atlassian-logo-neutral-image: 'images/logos/atlassian/atlassian-horizontal-neutral.svg';
 @atlassian-logo-blue-image: 'images/logos/atlassian/atlassian-horizontal-blue.svg';
 
-@atlassian-logo-image-width: 127px; // todo when we can use LESS > 1.7.0: image-width(@atlassian-logo-neutral-image);
-@atlassian-logo-image-height: 24px; // todo when we can use LESS > 1.7.0: image-height(@atlassian-logo-neutral-image);
+@atlassian-logo-image-width: 127px; /* todo when we can use LESS > 1.7.0: image-width(@atlassian-logo-neutral-image); */
+@atlassian-logo-image-height: 24px; /* todo when we can use LESS > 1.7.0: image-height(@atlassian-logo-neutral-image); */
 
 #footer-logo {
     margin-top: (@aui-grid * 2);
@@ -963,7 +969,7 @@ html.aui-responsive {
     .aui-avatar-size(xxlarge, @aui-avatar-size-xxlarge);
     .aui-avatar-size(xxxlarge, @aui-avatar-size-xxxlarge);
 
-    // Project avatars - circular and different sizes
+    /* Project avatars - circular and different sizes */
     &-project {
         .aui-avatar-border-size(xxxlarge, @aui-avatar-size-xxxlarge, 12px);
         .aui-avatar-border-size(xxlarge, @aui-avatar-size-xxlarge, 6px);
@@ -3734,4 +3740,21 @@ ul li ul {
 #page th {
     background-color: #1e3a8a !important;
     color: #fff !important;
+}
+
+/* -------------------- Override AUI styles for subpages -------------------- */
+#title-heading, .pagetitle {
+    color: #1e3a8a !important;
+}
+
+.aui-page-panel h1, .aui-page-panel h2, .aui-page-panel h3 {
+    color: #1e3a8a !important;
+}
+
+.aui-page-panel a {
+    color: #2563eb !important;
+}
+
+.aui-page-panel a:hover {
+    text-decoration: underline !important;
 }
