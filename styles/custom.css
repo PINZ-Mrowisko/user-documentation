@@ -285,7 +285,10 @@ ul li ul, ol li ol {
     color: #1d4ed8 !important;
 }
 
-/* -------------------- Utility Classes -------------------- */
+/* -------------------- Attachments -------------------- */
+.greybox img[src*="bullet_blue.gif"] {
+    display: none;
+}
 .text-center {
     text-align: center;
 }
